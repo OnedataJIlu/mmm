@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play GIF on Button Click</title>
+    <style>
+        #gifContainer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="startButton">Start</button>
+    <div id="gifContainer">
+        <img id="gifImage" src=""C:\Users\HP\Downloads\G40H.gif"" alt="GIF Image">
+    </div>
+
+    <script>
+        document.getElementById('startButton').addEventListener('click', function() {
+            const gifContainer = document.getElementById('gifContainer');
+            const gifImage = document.getElementById('gifImage');
+            gifContainer.style.display = 'block';
+            gifImage.src = gifImage.src; // Reload the image to start the GIF
+        });
+    </script>
+</body>
+</html>
